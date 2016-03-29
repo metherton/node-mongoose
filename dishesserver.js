@@ -11,6 +11,10 @@ db.once('open', function () {
     // we're connected!
     console.log("Connected correctly to server");
 
+    //db.collection('dishes').drop(function () {
+    //    db.close();
+    //});
+
     // create a new dish
     Dishes.create( {
         "name": "Uthapizza",
